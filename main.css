@@ -29,6 +29,7 @@
 .Anhang h3 {
   font-family: 'Shift', sans-serif;
   font-weight: bold;
+  color: #333333;
 }
 
 .Anhang a {
@@ -38,12 +39,14 @@
 .Allgemeines h2 {
   font-family: 'Shift', sans-serif;
   font-weight: bold;
+  color: #333333;
 }
 
 .Allgemeines h3 {
   font-family: 'Shift', sans-serif;
   font-weight: bold;
   font-size:100%;
+  color: #333333;
 }
 
 .Allgemeines{
