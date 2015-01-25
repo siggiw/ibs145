@@ -6,7 +6,11 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
-    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type='text/javascript' src='main.js'></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
   </head>
 
   <body>
@@ -26,6 +30,7 @@
           <ul class="nav navbar-nav">
 	          <li><a href="wikisearch.html">Webformular</a></li>
 	           <li><a href="impressum.html">Impressum</a></li>
+	           <li><a href="validate.html">Formularvali</a></li>
           </ul>
         </div>
       </div>
@@ -47,47 +52,49 @@
             <p>Was mich so ausmacht. </p>
             <div class="row">
                 <div class="col-md-8">
-                    <div>
+                    <div id="fragenue">
                     	<h3>Allgemeines</h3>
-                    	<p>Wie es schon recht oft auf der Seite sieht, ist mein Name Sergej Walter.</p>
-                    	<p>Hier die wichtigsten Personalien laut meines Ausweises.</p>
-                    	<ul>
-							 <li><b>Alter:</b>22</li>
-							 <li><b>Gr&ouml;&szlig;e:</b>180cm</li>
-							 <li><b>Augenfarbe:</b>Braun</li>
-						</ul>
-						<p>Nat&uuml;rlich gibt es sonst auch genug zu erz&auml;hlen. Ich komme aus einer kleinen Stadt namens Marsberg. diese
-						liegt im Sauerland und liegt an der Grenze zu Hessen und liegt in NRW. Da ich nicht t&auml;glich pendeln will,
-						bewohne ich in R&ouml;dgen eine 3 Mann WG.</p>
-						<p>Vor der THM habe ich ein Berufskolleg in Olsberg besucht, welche schonma die Kernkompetenzen eines Informatikers
-						 vermittelt hat. Weiter zur&uuml;ck liegt dementstsprechend auch ein Real-, sowie Grundschulabschluss. :D</p>
-                    	
-                    	<h3>Hobbies</h3>
-                    	<p>Da ich in letzter Zeit ein wenig Gewicht zugelegt habe, beschloss ich, dieses auch wieder runter zu bekommen.
-                    	 Nach 8 Wochen sind es 10kg geworden, was mich schon irgendwo ziemlich stolz macht. Viele haben mich auch schon
-                    	  gefragt "Wie geht das denn?!?". Naja das geht durch m&auml;&szlig;ig Sport treiben(3 mal die Woche 20min Cardio^^),
-                    	  gesunde Ern&auml;hrung und eine gro&szlig;e Portion Disziplin. </p>
-                    	  <p>Nachdem das angepeilte Ziel erreicht ist, freue ich mich schon auf Chipse. x) Jojo-Effekt ist wohl rein logisch zu 
-                    	  betrachten. Wenn man vorher ein halbes Schwein verschlingt und 40kg abnimmt, schafft man wohl das Schwein nicht mehr.
-                    	   Wenn doch sollte man sich nat&uuml;rlich auch nicht &uuml;ber eine Gewichtszunahme wundern. :)</p><br>
-                    	   <p>Sonst gibt es nur noch die wohl mehr oder weniger Typischen besch&auml;ftigungen. Da w&auml;ren also unteranderem:</p>
-	         	         	<ul>
-								 <li>Musik(Recht viele richtungen mit tendenz zum Hiphop. Alles au&szlig;er dem heutigem Kindertechnozeugs x))</li>
-								 <li>Wochenende auch mal Raus feiern, oder auch nur "Chillen" (was heutzutage wohl so viel hei&szlig;t wie gammeln mit Freunden)</li>
-								 <li><a href="http://euw.leagueoflegends.com/de">Leauge of Legends</a> (Jaaa dar&uuml;ber kann man sich aufregen, ist aber erstmal so :D)</li>
-								 <p>Dazu noch die wichtigsten Links zur Informationsbeschaffung.</p>
-								 	         	         	<ul>
-								 	         	         		<li><a href="http://www.reddit.com/r/leagueoflegends">Reddit/LoL</a> die lol Reddit Seite.</li>
-								 	         	         		<li><a href="http://euw.op.gg/">op.gg</a> Die Seite, um die Stats deiner Freunde und Mitspieler zu finden.</li>
-								 	         	         		<li><a href="http://www.lolnexus.com/">Lolnexus</a> Laufende Spiele und den Rang deiner Mitspieler einsehen. </li>
-															</ul>
+                    	<div>
+	                    	<p>Wie es schon recht oft auf der Seite sieht, ist mein Name Sergej Walter.</p>
+	                    	<p>Hier die wichtigsten Personalien laut meines Ausweises.</p>
+	                    	<ul>
+								 <li><b>Alter:</b>22</li>
+								 <li><b>Gr&ouml;&szlig;e:</b>180cm</li>
+								 <li><b>Augenfarbe:</b>Braun</li>
 							</ul>
-	                    
+							<p>Nat&uuml;rlich gibt es sonst auch genug zu erz&auml;hlen. Ich komme aus einer kleinen Stadt namens Marsberg. diese
+							liegt im Sauerland und liegt an der Grenze zu Hessen und liegt in NRW. Da ich nicht t&auml;glich pendeln will,
+							bewohne ich in R&ouml;dgen eine 3 Mann WG.</p>
+							<p>Vor der THM habe ich ein Berufskolleg in Olsberg besucht, welche schonma die Kernkompetenzen eines Informatikers
+							 vermittelt hat. Weiter zur&uuml;ck liegt dementstsprechend auch ein Real-, sowie Grundschulabschluss. :D</p>
+                    	</div>
+                    	<h3>Hobbies</h3>
+                    	<div>
+	                    	<p>Da ich in letzter Zeit ein wenig Gewicht zugelegt habe, beschloss ich, dieses auch wieder runter zu bekommen.
+	                    	 Nach 8 Wochen sind es 10kg geworden, was mich schon irgendwo ziemlich stolz macht. Viele haben mich auch schon
+	                    	  gefragt "Wie geht das denn?!?". Naja das geht durch m&auml;&szlig;ig Sport treiben(3 mal die Woche 20min Cardio^^),
+	                    	  gesunde Ern&auml;hrung und eine gro&szlig;e Portion Disziplin. </p>
+	                    	  <p>Nachdem das angepeilte Ziel erreicht ist, freue ich mich schon auf Chipse. x) Jojo-Effekt ist wohl rein logisch zu 
+	                    	  betrachten. Wenn man vorher ein halbes Schwein verschlingt und 40kg abnimmt, schafft man wohl das Schwein nicht mehr.
+	                    	   Wenn doch sollte man sich nat&uuml;rlich auch nicht &uuml;ber eine Gewichtszunahme wundern. :)</p><br>
+	                    	   <p>Sonst gibt es nur noch die wohl mehr oder weniger Typischen besch&auml;ftigungen. Da w&auml;ren also unteranderem:</p>
+		         	         	<ul>
+									 <li>Musik(Recht viele richtungen mit tendenz zum Hiphop. Alles au&szlig;er dem heutigem Kindertechnozeugs x))</li>
+									 <li>Wochenende auch mal Raus feiern, oder auch nur "Chillen" (was heutzutage wohl so viel hei&szlig;t wie gammeln mit Freunden)</li>
+									 <li><a href="http://euw.leagueoflegends.com/de">Leauge of Legends</a> (Jaaa dar&uuml;ber kann man sich aufregen, ist aber erstmal so :D)</li>
+									 <p>Dazu noch die wichtigsten Links zur Informationsbeschaffung.</p>
+									 	         	         	<ul>
+									 	         	         		<li><a href="http://www.reddit.com/r/leagueoflegends">Reddit/LoL</a> die lol Reddit Seite.</li>
+									 	         	         		<li><a href="http://euw.op.gg/">op.gg</a> Die Seite, um die Stats deiner Freunde und Mitspieler zu finden.</li>
+									 	         	         		<li><a href="http://www.lolnexus.com/">Lolnexus</a> Laufende Spiele und den Rang deiner Mitspieler einsehen. </li>
+																</ul>
+								</ul>
+	                    </div>
                     </div>
 
                 </div>
                 <div class="col-md-4">
-                	<h3>Auch ein Bild dieses wundersch&ouml;nes Mannes :D</h3>
+                	<h3>Auch ein Bild dieses wundersch&ouml;nes Mannes :D (Klick mich)</h3>
                     <div class="thumbnail">
                     <img src="imgs/ich lel.png" alt="Hier ein Bild vom Seiteninhaber" >
                     </div>

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="de">
 
   <head>
@@ -11,6 +10,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     
   </head>
 
@@ -29,9 +29,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-	          <li><a href="wikisearch.html">Webformular</a></li>
-	           <li class="active"><a href="impressum.html">Impressum</a></li>
-	           <li><a href="validate.html">Formularvali</a></li>
+	          <li ><a href="wikisearch.html">Webformular</a></li>
+	           <li><a href="impressum.html">Impressum</a></li>
+	           <li class="active"><a href="validate.html">Formularvali</a></li>
           </ul>
         </div>
       </div>
@@ -49,20 +49,36 @@
     
     <div class="Allgemeines">
         <div class="container">
-            <h1>Impressum</h1>
-			<h2>Angaben gem&auml;&szlig; &sect;5 TMG:</h2>
-			<p>Sergej Walter<br>
-			Oststr. 12<br>
-			34431 Marsberg
-			</p>
-			<h2>Kontakt:</h2>
-			<p>Telefon:02991376339<br> E-Mail:sergej.walter@mni.thm.de</p>
-			<h2>Quellenangaben f&uuml;r die verwendeten Bilder und Grafiken:</h2>
-			<p><a href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" >http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png</a></p>
-			<p><a href="http://upload.wikimedia.org/wikipedia/az/d/dc/Paypal_logo.jpg">http://upload.wikimedia.org/wikipedia/az/d/dc/Paypal_logo.jpg</a></p>
-			<p><a href="http://s3.amazonaws.com/codecademy-blog/assets/logo_blue_dark.png">http://s3.amazonaws.com/codecademy-blog/assets/logo_blue_dark.png</a></p>
-			<p><a href="http://www.w3.org/WAI/wcag1AAA">http://www.w3.org/WAI/wcag1AAA</a></p>
-        </div>
+            <h2>Test der Client Validierung</h2>
+            
+			<form class="cmxform" id="commentForm" method="get" action="">
+					<fieldset>
+						<legend>Gib bitte deinen Namen, Email, deine Website und einen Kommentar ab</legend>
+						<p>
+							<label for="cname">Name </label>
+							<input id="cname" name="name" minlength="2" type="text" required>
+						</p>
+						<p>
+							<label for="cemail">E-Mail</label>
+							<input id="cemail" type="email" name="email" required>
+						</p>
+						<p>
+							<label for="curl">URL (optional)</label>
+							<input id="curl" type="url" name="url">
+						</p>
+						<p>
+							<label for="ccomment">Kommentar</label>
+							<textarea id="ccomment" name="comment" required></textarea>
+						</p>
+						<p>
+							<input class="submit" type="submit" value="Submit">
+						</p>
+					</fieldset>
+			</form>
+            
+            
+            
+		</div>
     </div>
 
     
@@ -95,17 +111,18 @@
           <br><br><br>
 
             
-            <a href="http://wave.webaim.org/report#/http%3A%2F%2Fsergejwalter.cloudcontrolled.com%2Fimpressum.html"
+            <a href="http://wave.webaim.org/report#/http%3A%2F%2Fsergejwalter.cloudcontrolled.com%2Fwikisearch.html"
 		      title="Explanation of Level Triple-A Conformance">
 		  <img height="64" width="176" 
           src="http://www.w3.org/WAI/wcag1AAA"
           alt="Das Wavetool verlinkt "></a>
           
-          <p>Und am Ende die pull request Links.</p>
+                    <p>Und am Ende die pull request Links.</p>
           <a href="https://github.com/siggiw/ibs145/pull/1">Mein Repo</a><br>
           <a href="https://github.com/lukaskoehlinger/lukaskoehlingerIBS/pull/1">Sein Repo</a>
-          <br><br>
           
+          <!--  -->
+          <br><br>
 		  </div>
 	    </div>
 	  </div>
